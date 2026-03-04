@@ -62,7 +62,7 @@ const ReceiptItem = ({ item, delay }) => {
       >
         <div style={{ display: "flex", justifyContent: "space-between", alignItems: "baseline", fontFamily: "'Courier New', monospace", fontSize: 15, fontWeight: 700, color: hovered ? "#6a9a3a" : "#333", transition: "color 0.3s ease" }}>
           <span>{item.name.toUpperCase()}</span>
-          <span>{item.price.toFixed(2)}</span>
+          <span>${item.price.toFixed(2)}</span>
         </div>
         <div style={{ fontFamily: "'Courier New', monospace", fontSize: 12, color: "#888", marginTop: 3 }}>{item.desc}</div>
         <div style={{ display: "flex", gap: 6, marginTop: 6, flexWrap: "wrap" }}>
@@ -106,7 +106,7 @@ export default function ProjectsPage({ onBack }) {
               <span>DATE: {dateStr}</span>
               <span>TIME: {timeStr}</span>
             </div>
-            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#999", marginBottom: 4 }}>ORDER #: 2026-PORTFOLIO</div>
+            <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#999", marginBottom: 4 }}>ORDER #: 0004</div>
 
             <DottedLine />
             <div style={{ display: "flex", justifyContent: "space-between", fontFamily: "'Courier New', monospace", fontSize: 11, fontWeight: 700, color: "#999", textTransform: "uppercase", letterSpacing: 1 }}>
@@ -135,7 +135,7 @@ export default function ProjectsPage({ onBack }) {
             <FadeIn delay={300 + projects.length * 120 + 200}>
               <div style={{ textAlign: "center", marginTop: 12 }}>
                 <div style={{ fontFamily: "'Courier New', monospace", fontSize: 14, color: "#333", fontWeight: 700, letterSpacing: 2, marginBottom: 8 }}>THANK YOU FOR SHOPPING!</div>
-                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#999" }}>github.com/</div>
+                <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#999" }}>github.com/cyn4hia</div>
                 <div style={{ fontFamily: "'Courier New', monospace", fontSize: 11, color: "#999", marginTop: 16, letterSpacing: 2 }}>* * * * * * * * * * * *</div>
               </div>
             </FadeIn>
