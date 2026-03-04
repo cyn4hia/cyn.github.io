@@ -27,7 +27,7 @@ export default function HomePage({ onNavigate }) {
         overflow: "hidden",
       }}
     >
-      {/* title */}
+    {/* ── title ── */}
     <div
       style={{
         position: "relative",
@@ -38,12 +38,12 @@ export default function HomePage({ onNavigate }) {
         transition: "all 1.2s cubic-bezier(0.22,1,0.36,1)",
       }}
     >
-      {/* s in cindy's */}
+      {/* left of stem */}
       <span
         style={{
           position: "absolute",
-          top: "3%",
-          left: "12%",
+          bottom: "77%",
+          left: "35%",
           fontFamily: "var(--font-display)",
           fontSize: "clamp(52px, 7vw, 88px)",
           fontWeight: 300,
@@ -61,8 +61,8 @@ export default function HomePage({ onNavigate }) {
       <span
         style={{
           position: "absolute",
-          top: "3%",
-          right: "22%",
+          bottom: "77%",
+          right: "28%",
           fontFamily: "var(--font-display)",
           fontSize: "clamp(52px, 7vw, 88px)",
           fontWeight: 300,
@@ -76,30 +76,46 @@ export default function HomePage({ onNavigate }) {
         s
       </span>
 
-      {/* grape bunch*/}
+      {/* Grape bunch — large, overlapping title & subtitle */}
       <img
         src={images.bunch}
         alt="Green grapes"
         style={{
           position: "absolute",
-          top: "8%",
+          bottom: "10%",
           left: "50%",
-          transform: "translateX(-55%)",
-          width: "clamp(300px, 42vw, 500px)",
+          transform: "translateX(-50%)",
+          width: "clamp(500px, 42vw, 700px)",
           height: "auto",
           zIndex: 1,
           animation: "gentle-float 6s ease-in-out infinite",
         }}
       />
 
-      {/* green grape / personal web text */}
+      {/*the grape leaf which is ' */}
+      <img
+        src={images.leaf}
+        alt="Grape leaf"
+        style={{
+          position: "absolute",
+          bottom: "80%",
+          left: "66%",
+          transform: "translateX(-50%)",
+          width: "clamp(50px, 42vw, 100px)",
+          height: "auto",
+          zIndex: 1,
+          animation: "gentle-float 6s ease-in-out infinite",
+        }}
+      />
+
+      {/* "green grapes." + "personal web" — lower-right overlap */}
       <div
         style={{
           position: "absolute",
-          bottom: "14%",
-          right: "5%",
+          bottom: "22%",
+          right: "25%",
           zIndex: 2,
-          textAlign: "center",
+          textAlign: "left",
           opacity: subVis ? 1 : 0,
           transform: subVis ? "translateY(0)" : "translateY(15px)",
           transition: "all 0.9s cubic-bezier(0.22,1,0.36,1)",
@@ -115,13 +131,27 @@ export default function HomePage({ onNavigate }) {
         >
           green grapes.
         </h2>
+      {/*personal web text */}
+      </div>
+            <div
+        style={{
+          position: "absolute",
+          bottom: "19%",
+          right: "45%",
+          zIndex: 2,
+          textAlign: "left",
+          opacity: subVis ? 1 : 0,
+          transform: subVis ? "translateY(0)" : "translateY(15px)",
+          transition: "all 0.9s cubic-bezier(0.22,1,0.36,1)",
+        }}
+      >
         <p
           style={{
             fontFamily: "var(--font-body)",
             fontSize: "clamp(12px, 1.3vw, 16px)",
             color: "var(--text-light)",
             letterSpacing: 2,
-            marginTop: 2,
+            marginTop: 1,
           }}
         >
           personal web
@@ -132,8 +162,8 @@ export default function HomePage({ onNavigate }) {
       <nav
         style={{
           display: "flex",
-          gap: "clamp(30px, 8vw, 100px)",
-          marginTop: 30,
+          gap: "clamp(0px, 2vw, 100px)",
+          marginTop: 0,
           flexWrap: "wrap",
           justifyContent: "center",
         }}
@@ -142,8 +172,8 @@ export default function HomePage({ onNavigate }) {
           label="Sweet"
           subtitle="Projects"
           imgSrc={images.sweet}
-          imgW={40}
-          imgH={40}
+          imgW={60}
+          imgH={60}
           onClick={() => onNavigate("projects")}
           delay={1200}
         />
@@ -151,8 +181,8 @@ export default function HomePage({ onNavigate }) {
           label="Crunchy"
           subtitle="About Me"
           imgSrc={images.crunchy}
-          imgW={55}
-          imgH={42}
+          imgW={75}
+          imgH={62}
           onClick={() => onNavigate("about")}
           delay={1400}
         />
@@ -160,8 +190,8 @@ export default function HomePage({ onNavigate }) {
           label="Cold"
           subtitle="Interests"
           imgSrc={images.cold}
-          imgW={42}
-          imgH={42}
+          imgW={60}
+          imgH={60}
           onClick={() => onNavigate("interests")}
           delay={1600}
         />

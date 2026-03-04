@@ -1,9 +1,5 @@
 import { useState, useEffect } from "react";
 
-/**
- * A single navigation button on the landing page.
- * Shows label + grape image + subtitle, with hover and entrance animations.
- */
 export default function NavButton({
   label,
   subtitle,
@@ -33,7 +29,7 @@ export default function NavButton({
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        gap: 2,
+        gap: 0,
         padding: "12px 20px",
         borderRadius: 16,
         transform: visible
@@ -45,7 +41,7 @@ export default function NavButton({
         transition: "all 0.5s cubic-bezier(0.22,1,0.36,1)",
       }}
     >
-      <div style={{ display: "flex", alignItems: "center", gap: 6 }}>
+      <div style={{ display: "flex", alignItems: "center", gap:0 }}>
         <span
           style={{
             fontFamily: "var(--font-display)",
