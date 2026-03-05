@@ -208,7 +208,7 @@ function InfoCard({ cube, onClose }) {
     <div
       key={cube.label}
       style={{
-        background: "#fff",
+        background: "#f8f2dbff",
         borderRadius: 16,
         padding: "24px 28px",
         border: "1px solid rgba(141,184,96,0.15)",

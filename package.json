@@ -3,7 +3,7 @@
   "private": true,
   "version": "1.0.0",
   "type": "module",
-  "homepage": "https://cyn.github.io/green-grapes",
+  "homepage": "https://cyn4hia.github.io/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
