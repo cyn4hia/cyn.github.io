@@ -9,25 +9,25 @@ const projects = [
     desc: "Personal portfolio website (you're on it!)",
     price: 3.26,
     tags: ["React", "CSS/HTML"],
-    link: null,
+    link: "https://cyn4hia.github.io/",
   },
   {
     name: "TFT Profile Card",
     desc: "My dynamic TFT history + profile details for my Github README",
     price: 2.26,
     tags: ["Python", "SVG"],
-    link: null,
+    link: "https://github.com/cyn4hia",
   },
   {
     name: "Cook Your Books",
-    desc: "CS 3100 Semester Project",
+    desc: "CS 3100 Semester Project (In Progress)",
     price: 1.26,
     tags: ["JSON", "Java"],
     link: null,
   },
   {
     name: "Royale High Halo Predictor",
-    desc: "Using LLMs to predict ingame price values for Royale High Roblox game",
+    desc: "Using LLMs to predict ingame price values for Royale High Roblox game (In Progress)",
     price: 4.25,
     tags: ["React", "Claude API", "JavaScript"],
     link: null,
@@ -37,7 +37,7 @@ const projects = [
     desc: "Custom flashcard deck that helps you learn TFT trait",
     price: 9.25,
     tags: ["JavaScript", "Python"],
-    link: null,
+    link: "https://github.com/cyn4hia/tft_flashcards",
   },
 ];
 
